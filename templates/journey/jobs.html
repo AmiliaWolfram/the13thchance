@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a>02 AI Analysis</a><a>03 Roadmap</a><a>04 Skill Tests</a><a>05 Projects</a><a>06 Portfolio</a><a>07 Career Score</a><a>08 Interview</a><a>09 Networking</a><a class="active">10 Jobs</a></aside>
+    <section class="journey-main"><div class="journey-top"><span class="badge">Opportunity Hub</span><h1>You unlocked <span>job-ready opportunities.</span></h1><p>Your verified profile is now ready for employers.</p></div>
+        <div class="opportunity-list"><div class="opportunity-card"><div><span class="job-tag">96% AI Match</span><h3>Data Analyst Internship</h3><p>GreenTech Solutions · Berlin · Hybrid · 6 months</p></div><a class="small-btn">Apply Now</a></div><div class="opportunity-card"><div><span class="job-tag">91% AI Match</span><h3>Junior BI Working Student</h3><p>BMW Group · Munich · Part-time</p></div><a class="small-btn">Apply Now</a></div><div class="opportunity-card"><div><span class="job-tag">88% AI Match</span><h3>AI Research Project</h3><p>University Partner · Remote · 8 weeks</p></div><a class="small-btn">View Details</a></div></div>
+        <section class="about-cta"><h2>Congratulations! You completed The 13th Chance Journey.</h2><p>You are ready to apply with verified skills, a smart portfolio and AI interview feedback.</p></section>
+    </section>
+</main>
+{% endblock %}

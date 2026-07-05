@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar">
+        <h3>Career Journey</h3>
+        <a class="active">01 Profile</a><a>02 AI Analysis</a><a>03 Roadmap</a><a>04 Skill Tests</a><a>05 Projects</a><a>06 Portfolio</a><a>07 Career Score</a><a>08 Interview</a><a>09 Networking</a><a>10 Jobs</a>
+    </aside>
+    <section class="journey-main">
+        <div class="journey-top"><span class="badge">Step 01</span><h1>Your profile is complete.</h1><p>AI has enough information to build your personalized career path.</p></div>
+        <div class="profile-dashboard">
+            <div class="profile-card big-card"><div class="avatar-large">AV</div><h2>Amina Volkova</h2><p>Business Informatics & Digital Transformation · Hochschule Schmalkalden</p><div class="progress-line"><span style="width:94%"></span></div><strong>Profile completeness: 94%</strong></div>
+            <div class="info-grid">
+                <div class="mini-stat"><span>Dream role</span><strong>Data Analyst</strong></div>
+                <div class="mini-stat"><span>Languages</span><strong>English · German · Russian</strong></div>
+                <div class="mini-stat"><span>Main skills</span><strong>Python · SQL · Excel · Django</strong></div>
+                <div class="mini-stat"><span>Career goal</span><strong>Internship in Data Analytics</strong></div>
+            </div>
+        </div>
+        <div class="next-action"><a href="{% url 'journey:ai_analysis' %}" class="primary-btn">Continue to AI Analysis</a></div>
+    </section>
+</main>
+{% endblock %}

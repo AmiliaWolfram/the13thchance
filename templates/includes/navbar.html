@@ -1,0 +1,169 @@
+<nav class="navbar">
+    <a href="{% url 'core:home' %}" class="nav-logo">
+        <span class="logo-mark">13</span>
+        <span>The 13th Chance</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="{% url 'core:students' %}">Students</a>
+        <a href="{% url 'core:opportunities' %}">Opportunities</a>
+        <a href="{% url 'core:mentors' %}">Mentors</a>
+        <a href="{% url 'core:employers' %}">Employers</a>
+        <a href="{% url 'core:ai_assistant' %}">AI Assistant</a>
+        <a href="{% url 'core:how_it_works' %}">About us</a>
+        <a href="{% url 'core:join_platform' %}" class="nav-button">Join Platform</a>
+    </div>
+</nav>
+
+<style>
+.navbar {
+    position: fixed;
+    top: 28px;
+    left: 32px;
+    right: 32px;
+    z-index: 1000;
+
+    height: 92px;
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 24px 80px rgba(7, 47, 24, 0.18);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    text-decoration: none;
+    color: #09261a;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.7px;
+}
+
+.logo-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+
+    display: grid;
+    place-items: center;
+
+    background: linear-gradient(135deg, #119327, #6bdc8c);
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+
+    box-shadow: 0 12px 30px rgba(21, 130, 46, 0.35);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #0d2b1d;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.25s ease;
+}
+
+.nav-links a:not(.nav-button)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 3px;
+    border-radius: 99px;
+    background: #168b2b;
+    transition: 0.25s ease;
+}
+
+.nav-links a:not(.nav-button):hover {
+    color: #168b2b;
+}
+
+.nav-links a:not(.nav-button):hover::after {
+    width: 100%;
+}
+
+.nav-button {
+    padding: 18px 28px;
+    border-radius: 999px;
+
+    background: linear-gradient(135deg, #188b2b, #0b6f22);
+    color: white !important;
+
+    box-shadow: 0 16px 38px rgba(18, 122, 35, 0.32);
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 46px rgba(18, 122, 35, 0.42);
+}
+
+body {
+    padding-top: 130px;
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+        top: 16px;
+        left: 16px;
+        right: 16px;
+        height: auto;
+        padding: 18px;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    body {
+        padding-top: 180px;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-logo {
+        font-size: 20px;
+    }
+
+    .nav-links a:not(.nav-button) {
+        display: none;
+    }
+
+    .nav-links {
+        width: auto;
+    }
+
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    body {
+        padding-top: 110px;
+    }
+}
+</style>

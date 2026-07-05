@@ -1,0 +1,432 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="home-page">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero-content" id="home">
+        <div class="hero-left">
+            <div class="badge">AI Career Ecosystem</div>
+
+            <h1>
+                Everyone deserves a <span>first opportunity.</span>
+            </h1>
+
+            <p class="subtitle">
+                We help students <strong>discover</strong> their potential,
+                gain real <strong>experience</strong>, and get <strong>hired</strong>.
+            </p>
+
+            <div class="hero-actions">
+                <a href="{% url 'core:students' %}" class="primary-btn">Start Your Journey</a>
+                <a href="#how-it-works" class="secondary-btn">Watch how it works</a>
+            </div>
+
+            <div class="audience-strip">
+                <div class="audience-item">
+                    <div class="icon-circle icon-users"></div>
+                    <strong>For Students</strong>
+                    <p>Build your future</p>
+                </div>
+
+                <div class="audience-item">
+                    <div class="icon-circle icon-briefcase"></div>
+                    <strong>For Employers</strong>
+                    <p>Find true talent</p>
+                </div>
+
+                <div class="audience-item">
+                    <div class="icon-circle icon-cap"></div>
+                    <strong>For Universities</strong>
+                    <p>Stronger impact</p>
+                </div>
+
+                <div class="audience-item">
+                    <div class="icon-circle icon-globe"></div>
+                    <strong>For Communities</strong>
+                    <p>Better tomorrow</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="orbit"></div>
+
+            <div class="feature-card card-1">
+                <div class="icon-box icon-ai"></div>
+                <div>
+                    <strong>AI Guidance</strong>
+                    <p>Personal career coach</p>
+                </div>
+            </div>
+
+            <div class="feature-card card-2">
+                <div class="icon-box icon-target"></div>
+                <div>
+                    <strong>Personalized Roadmap</strong>
+                    <p>Step-by-step plan</p>
+                </div>
+            </div>
+
+            <div class="feature-card card-3">
+                <div class="icon-box icon-work"></div>
+                <div>
+                    <strong>Practical Experience</strong>
+                    <p>Real tasks, real skills</p>
+                </div>
+            </div>
+
+            <div class="feature-card card-4">
+                <div class="icon-box icon-folder"></div>
+                <div>
+                    <strong>Smart Portfolio</strong>
+                    <p>Show what you can do</p>
+                </div>
+            </div>
+
+            <div class="feature-card card-5">
+                <div class="icon-box icon-check"></div>
+                <div>
+                    <strong>Better Opportunities</strong>
+                    <p>Get hired faster</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= ECOSYSTEM ================= -->
+    <section class="ecosystem-section" id="ecosystem">
+        <div class="section-title">
+            <span>Our Ecosystem</span>
+            <h2>One Platform.<br>Four Connected Worlds.</h2>
+            <p>
+                The 13th Chance brings together students, employers,
+                universities and communities into one intelligent AI ecosystem
+                where everyone benefits.
+            </p>
+        </div>
+
+        <div class="ecosystem-grid">
+            <div class="eco-card">
+                <div class="eco-icon students-icon"></div>
+                <h3>Students</h3>
+                <p>Discover your strengths, build your portfolio, receive AI guidance and find internships.</p>
+            </div>
+
+            <div class="eco-card">
+                <div class="eco-icon employer-icon"></div>
+                <h3>Employers</h3>
+                <p>Find motivated candidates through verified skills instead of just resumes.</p>
+            </div>
+
+            <div class="center-circle">
+                <div class="pulse pulse1"></div>
+                <div class="pulse pulse2"></div>
+
+                <div class="center-logo">
+                    <h3>The 13th Chance</h3>
+                    <p>AI Career Ecosystem</p>
+                </div>
+            </div>
+
+            <div class="eco-card">
+                <div class="eco-icon university-icon"></div>
+                <h3>Universities</h3>
+                <p>Track student growth, cooperate with employers and improve graduate success.</p>
+            </div>
+
+            <div class="eco-card">
+                <div class="eco-icon community-icon"></div>
+                <h3>Communities</h3>
+                <p>Retain local talent, create stronger regions and support sustainable development.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+    <section class="home-features" id="features">
+        <div class="section-title">
+            <span>Platform Features</span>
+            <h2>Everything you need<br>to build your future.</h2>
+            <p>
+                From the first semester to the first professional job,
+                The 13th Chance guides students through every important career step.
+            </p>
+        </div>
+
+        <div class="features-showcase">
+
+            <article class="feature-large-card">
+                <div class="feature-visual">
+                    <div class="mockup-card">
+                        <span class="mockup-label">AI Career Coach</span>
+                        <h3>Career Match</h3>
+                        <div class="score-circle">94%</div>
+                        <p>Your strongest direction: Data & Digital Business</p>
+                    </div>
+                </div>
+
+                <div class="feature-copy">
+                    <span>01</span>
+                    <h3>AI Career Coach</h3>
+                    <p>
+                        Students receive personal guidance, strengths analysis and realistic
+                        career recommendations based on their skills, goals and experience.
+                    </p>
+
+                    <ul>
+                        <li>Personal strengths analysis</li>
+                        <li>Career recommendations</li>
+                        <li>CV and interview support</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="feature-large-card reverse">
+                <div class="feature-visual roadmap-visual">
+                    <div class="roadmap-line"></div>
+
+                    <div class="roadmap-step active">Assessment</div>
+                    <div class="roadmap-step">Learning Path</div>
+                    <div class="roadmap-step">Real Projects</div>
+                    <div class="roadmap-step">First Offer</div>
+                </div>
+
+                <div class="feature-copy">
+                    <span>02</span>
+                    <h3>Personalized Roadmaps</h3>
+                    <p>
+                        Every student gets a clear step-by-step plan:
+                        what to learn, what to practice and which opportunities to apply for next.
+                    </p>
+
+                    <ul>
+                        <li>Skill-based learning plan</li>
+                        <li>Progress tracking</li>
+                        <li>Smart next steps</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="feature-large-card">
+                <div class="feature-visual portfolio-visual">
+                    <div class="portfolio-card">
+                        <h4>Smart Portfolio</h4>
+                        <div class="portfolio-row"></div>
+                        <div class="portfolio-row short"></div>
+                        <div class="portfolio-tags">
+                            <span>Python</span>
+                            <span>Analytics</span>
+                            <span>Teamwork</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-mini-card">
+                        Verified skills
+                    </div>
+                </div>
+
+                <div class="feature-copy">
+                    <span>03</span>
+                    <h3>Smart Portfolio</h3>
+                    <p>
+                        The platform helps students show real abilities through projects,
+                        certificates, mentor feedback and verified achievements.
+                    </p>
+
+                    <ul>
+                        <li>Projects instead of empty CVs</li>
+                        <li>Verified skills</li>
+                        <li>Achievements and certificates</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="feature-large-card reverse">
+                <div class="feature-visual matching-visual">
+                    <div class="match-node main-node">AI</div>
+                    <div class="match-node node-student">Student</div>
+                    <div class="match-node node-mentor">Mentor</div>
+                    <div class="match-node node-job">Employer</div>
+                    <div class="match-node node-uni">University</div>
+                </div>
+
+                <div class="feature-copy">
+                    <span>04</span>
+                    <h3>Smart Matching</h3>
+                    <p>
+                        AI connects students with internships, mentors, employers and regional
+                        opportunities that match their skills and ambitions.
+                    </p>
+
+                    <ul>
+                        <li>Student-to-employer matching</li>
+                        <li>Mentor recommendations</li>
+                        <li>Relevant internships and jobs</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ================= AI ASSISTANT PREVIEW ================= -->
+    <section class="ai-preview-section" id="ai-preview">
+        <div class="ai-preview-content">
+            <div class="ai-preview-text">
+                <span>AI Assistant</span>
+                <h2>Meet your personal career assistant.</h2>
+                <p>
+                    Not just a chatbot. A smart career companion that helps students
+                    understand their next step, prepare applications and stay motivated.
+                </p>
+
+                <a href="{% url 'core:ai_assistant' %}" class="primary-btn">Talk to AI</a>
+            </div>
+
+            <div class="ai-dashboard">
+                <div class="dashboard-top">
+                    <div>
+                        <strong>Hello, Amina</strong>
+                        <p>Today’s career plan</p>
+                    </div>
+                    <div class="status-pill">Active</div>
+                </div>
+
+                <div class="task-list">
+                    <div class="task-item done">Improve portfolio project</div>
+                    <div class="task-item done">Update CV summary</div>
+                    <div class="task-item">Apply for internship</div>
+                    <div class="task-item">Prepare mentor questions</div>
+                </div>
+
+                <div class="career-score">
+                    <span>Career readiness</span>
+                    <strong>86%</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="how-section" id="how-it-works">
+        <div class="section-title">
+            <span>How it Works</span>
+            <h2>From first semester<br>to first opportunity.</h2>
+            <p>
+                A simple journey that turns uncertainty into a clear career direction.
+            </p>
+        </div>
+
+        <div class="journey-grid">
+            <div class="journey-card">
+                <span>01</span>
+                <h3>Create Profile</h3>
+                <p>Students add their goals, skills, interests and education path.</p>
+            </div>
+
+            <div class="journey-card">
+                <span>02</span>
+                <h3>Get AI Assessment</h3>
+                <p>The platform analyzes strengths and suggests career directions.</p>
+            </div>
+
+            <div class="journey-card">
+                <span>03</span>
+                <h3>Build Skills</h3>
+                <p>Students follow roadmaps, complete tasks and collect achievements.</p>
+            </div>
+
+            <div class="journey-card">
+                <span>04</span>
+                <h3>Find Opportunities</h3>
+                <p>AI recommends mentors, internships, projects and employers.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+    <section class="home-stats">
+        <div>
+            <strong>5K+</strong>
+            <span>Students supported</span>
+        </div>
+
+        <div>
+            <strong>120+</strong>
+            <span>Mentors</span>
+        </div>
+
+        <div>
+            <strong>250+</strong>
+            <span>Employer partners</span>
+        </div>
+
+        <div>
+            <strong>18</strong>
+            <span>Countries connected</span>
+        </div>
+    </section>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials-section">
+        <div class="section-title">
+            <span>Success Stories</span>
+            <h2>Real support.<br>Real confidence.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>
+                    “The platform helped me understand what I can actually do
+                    and how to present my projects to employers.”
+                </p>
+                <strong>Student, Business Informatics</strong>
+            </div>
+
+            <div class="testimonial-card">
+                <p>
+                    “Instead of only reading CVs, we can see real skills,
+                    completed projects and motivation.”
+                </p>
+                <strong>Employer Partner</strong>
+            </div>
+
+            <div class="testimonial-card">
+                <p>
+                    “The 13th Chance creates a bridge between university learning
+                    and real career opportunities.”
+                </p>
+                <strong>University Mentor</strong>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="final-cta-section">
+        <div class="final-cta-card">
+            <span>Join the Future</span>
+            <h2>Ready to build your first opportunity?</h2>
+            <p>
+                Start your journey with AI guidance, mentors, projects and real career connections.
+            </p>
+
+            <div class="hero-actions cta-actions">
+                <a href="{% url 'core:students' %}" class="primary-btn">Join Platform</a>
+                <a href="#features" class="secondary-btn">Explore Features</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+{% endblock %}

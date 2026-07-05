@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="onboarding-page">
+
+    <section class="onboarding-hero">
+        <div class="badge">Student Onboarding</div>
+
+        <h1>
+            Build your career profile.<br>
+            <span>Prove your skills.</span>
+        </h1>
+
+        <p>
+            Complete your profile and take short skill tests. The platform will use your verified skills
+            to recommend internships, mentors, projects and learning paths.
+        </p>
+    </section>
+
+    <section class="onboarding-layout">
+
+        <aside class="onboarding-sidebar">
+            <div class="progress-card">
+                <h3>Profile Progress</h3>
+
+                <div class="progress-circle">
+                    <span>42%</span>
+                </div>
+
+                <p>Complete all steps to unlock stronger AI recommendations.</p>
+            </div>
+
+            <div class="steps-list">
+                <a class="active">1. Personal Info</a>
+                <a>2. Education</a>
+                <a>3. Career Goals</a>
+                <a>4. Skills</a>
+                <a>5. Skill Tests</a>
+                <a>6. Portfolio</a>
+            </div>
+        </aside>
+
+        <section class="onboarding-content">
+
+            <div class="onboarding-card">
+                <h2>Personal Information</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Amina Volkova">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Country</label>
+                        <input type="text" placeholder="Kyrgyzstan">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Short Bio</label>
+                    <textarea placeholder="Tell employers and mentors who you are..."></textarea>
+                </div>
+            </div>
+
+            <div class="onboarding-card">
+                <h2>Education</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>University</label>
+                        <input type="text" placeholder="Hochschule Schmalkalden">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Study Program</label>
+                        <input type="text" placeholder="Business Informatics">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Degree</label>
+                        <select>
+                            <option>Bachelor</option>
+                            <option>Master</option>
+                            <option>Exchange Student</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Semester</label>
+                        <input type="text" placeholder="4th Semester">
+                    </div>
+                </div>
+            </div>
+
+            <div class="onboarding-card">
+                <h2>Career Goals</h2>
+
+                <div class="form-group">
+                    <label>What are you looking for?</label>
+                    <select>
+                        <option>Internship</option>
+                        <option>Working Student Position</option>
+                        <option>Student Project</option>
+                        <option>Entry-level Job</option>
+                        <option>Mentorship</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Desired Career Field</label>
+                    <input type="text" placeholder="Data Analytics, Software Development, UX Design...">
+                </div>
+            </div>
+
+            <div class="onboarding-card">
+                <h2>Verified Skills</h2>
+                <p class="card-subtitle">
+                    Each skill can be tested and added to your verified career profile.
+                </p>
+
+                <div class="skills-test-grid">
+
+                    <div class="skill-test-card">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Programming basics, logic, data handling</p>
+                        </div>
+                        <span class="test-status not-started">Not tested</span>
+                        <button type="button">Start Test</button>
+                    </div>
+
+                    <div class="skill-test-card">
+                        <div>
+                            <h3>SQL</h3>
+                            <p>Queries, joins, filtering, databases</p>
+                        </div>
+                        <span class="test-status not-started">Not tested</span>
+                        <button type="button">Start Test</button>
+                    </div>
+
+                    <div class="skill-test-card">
+                        <div>
+                            <h3>Excel</h3>
+                            <p>Formulas, pivot tables, reporting</p>
+                        </div>
+                        <span class="test-status passed">82%</span>
+                        <button type="button">Retake Test</button>
+                    </div>
+
+                    <div class="skill-test-card">
+                        <div>
+                            <h3>Communication</h3>
+                            <p>Teamwork, presentation, business writing</p>
+                        </div>
+                        <span class="test-status in-progress">In progress</span>
+                        <button type="button">Continue</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="onboarding-card test-preview-card">
+                <div>
+                    <span class="eyebrow">Example Test</span>
+                    <h2>Python Skill Assessment</h2>
+                    <p>
+                        10 questions · 15 minutes · instant score · added to your verified profile.
+                    </p>
+                </div>
+
+                <div class="test-question">
+                    <h3>Question 1</h3>
+                    <p>What does this Python code return?</p>
+
+                    <pre>len(["AI", "Career", "Future"])</pre>
+
+                    <label><input type="radio" name="q1"> 2</label>
+                    <label><input type="radio" name="q1"> 3</label>
+                    <label><input type="radio" name="q1"> 4</label>
+
+                    <button type="button" class="join-submit">Submit Answer</button>
+                </div>
+            </div>
+
+            <div class="onboarding-card">
+                <h2>Portfolio</h2>
+
+                <div class="form-group">
+                    <label>LinkedIn</label>
+                    <input type="url" placeholder="https://linkedin.com/in/...">
+                </div>
+
+                <div class="form-group">
+                    <label>GitHub / Portfolio Link</label>
+                    <input type="url" placeholder="https://github.com/...">
+                </div>
+
+                <div class="form-group">
+                    <label>Project Description</label>
+                    <textarea placeholder="Describe one project you are proud of..."></textarea>
+                </div>
+
+                <button type="button" class="join-submit">Save Student Profile</button>
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a class="active">02 AI Analysis</a><a>03 Roadmap</a><a>04 Skill Tests</a><a>05 Projects</a><a>06 Portfolio</a><a>07 Career Score</a><a>08 Interview</a><a>09 Networking</a><a>10 Jobs</a></aside>
+    <section class="journey-main">
+        <div class="journey-top"><span class="badge">AI Analysis Complete</span><h1>Your best career match is <span>Data Analytics.</span></h1><p>Cactus AI analyzed your profile, skills, interests and goals.</p></div>
+        <div class="analysis-grid">
+            <div class="score-card"><span>Career Match</span><strong>96%</strong><p>Data Analyst Internship</p></div>
+            <div class="score-card"><span>Technical Fit</span><strong>89%</strong><p>Python, SQL, dashboards</p></div>
+            <div class="score-card"><span>Workplace Fit</span><strong>84%</strong><p>Communication & teamwork</p></div>
+        </div>
+        <div class="onboarding-card"><h2>AI Recommendations</h2><div class="recommendation-list"><p>✅ Strengthen SQL joins and database tasks.</p><p>✅ Build one Power BI / Tableau portfolio dashboard.</p><p>✅ Complete a verified Python assessment.</p><p>✅ Apply for analytics internships in Germany.</p></div></div>
+        <div class="next-action"><a href="{% url 'journey:roadmap' %}" class="primary-btn">View My Roadmap</a></div>
+    </section>
+</main>
+{% endblock %}

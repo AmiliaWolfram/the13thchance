@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="journey-page">
+
+    <section class="journey-hero">
+        <div class="journey-left">
+            <div class="badge">Career Journey</div>
+
+            <h1>
+                Welcome to your<br>
+                <span>personal career path.</span>
+            </h1>
+
+            <p>
+                Complete each step, prove your skills, build your portfolio
+                and unlock real opportunities that match your potential.
+            </p>
+
+            <a href="{% url 'journey:profile' %}" class="primary-btn">
+                Start Journey
+            </a>
+        </div>
+
+        <div class="journey-right">
+            <div class="journey-card active">
+                <span>01</span>
+                <h3>Complete Profile</h3>
+                <p>Tell AI about your education, skills and dream career.</p>
+            </div>
+
+            <div class="journey-card">
+                <span>02</span>
+                <h3>AI Analysis</h3>
+                <p>Discover your strengths, gaps and best-fit career direction.</p>
+            </div>
+
+            <div class="journey-card">
+                <span>03</span>
+                <h3>Roadmap</h3>
+                <p>Follow a clear step-by-step plan toward your goal.</p>
+            </div>
+
+            <div class="journey-card locked">
+                <span>04</span>
+                <h3>Skill Tests</h3>
+                <p>Verify your abilities through short assessments.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+{% endblock %}

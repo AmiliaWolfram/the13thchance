@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="onboarding-page">
+
+    <section class="onboarding-hero">
+        <div class="badge">Company Onboarding</div>
+
+        <h1>
+            Build your company profile.<br>
+            <span>Find verified talent.</span>
+        </h1>
+
+        <p>
+            Tell us what kind of students, interns or junior specialists you are looking for.
+            The platform will recommend candidates based on verified skills and career goals.
+        </p>
+    </section>
+
+    <section class="join-form-section">
+        <div class="join-card active-form">
+            <div class="form-header">
+                <h2>Company Details</h2>
+                <p>Complete your profile to publish opportunities and receive AI-matched candidates.</p>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label>Company Description</label>
+                    <textarea placeholder="Tell students about your company, culture and mission..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Company Size</label>
+                        <select>
+                            <option>1-10 employees</option>
+                            <option>11-50 employees</option>
+                            <option>51-250 employees</option>
+                            <option>250+ employees</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" placeholder="Berlin, Germany">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Required Skills</label>
+                    <textarea placeholder="Python, SQL, Excel, German B1, communication..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Opportunity Description</label>
+                    <textarea placeholder="Describe internship, project or entry-level role..."></textarea>
+                </div>
+
+                <button type="button" class="join-submit">Save Company Profile</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+{% endblock %}

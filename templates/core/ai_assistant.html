@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="ai-page">
+
+    <section class="ai-hero">
+        <div class="ai-hero-content">
+            <div class="badge">AI Assistant</div>
+
+            <h1>
+                Hi! I’m Cactus <span>Your AI career assistant.</span>
+            </h1>
+
+            <p>
+                Ask anything about your career journey: CV improvement, internships,
+                interviews, missing skills, mentors or your next best step.
+            </p>
+
+            <div class="ai-hero-points">
+                <div>
+                    <span class="ai-point-icon">✦</span>
+                    <div>
+                        <strong>Personalized advice</strong>
+                        <small>Based on your profile and goals</small>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="ai-point-icon">✦</span>
+                    <div>
+                        <strong>Smart recommendations</strong>
+                        <small>Internships, mentors and skills</small>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="ai-point-icon">✦</span>
+                    <div>
+                        <strong>24/7 support</strong>
+                        <small>Always ready to guide you</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ai-cactus-wrap">
+
+
+            <img src="{% static 'core/img/cactus-ai.png' %}" class="ai-cactus" alt="AI Assistant">
+        </div>
+    </section>
+
+    <section class="ai-chat-section">
+        <aside class="chat-sidebar">
+            <button class="new-chat-btn">New Chat</button>
+
+            <h3>Recent conversations</h3>
+
+            <div class="conversation active">
+                <strong>How can I improve my CV?</strong>
+                <span>10:32 AM</span>
+            </div>
+
+            <div class="conversation">
+                <strong>Best internships for data analytics</strong>
+                <span>Yesterday</span>
+            </div>
+
+            <div class="conversation">
+                <strong>How to prepare for an interview?</strong>
+                <span>2 days ago</span>
+            </div>
+
+            <div class="conversation">
+                <strong>Career path in Business Informatics</strong>
+                <span>3 days ago</span>
+            </div>
+
+            <button class="view-all-btn">View all conversations</button>
+        </aside>
+
+        <section class="chat-main">
+            <div class="chat-topbar">
+                <div>
+                    <strong>Cactus AI</strong>
+                    <span>Online · Career guidance assistant</span>
+                </div>
+
+                <button>Clear chat</button>
+            </div>
+
+            <div class="chat-messages">
+                <div class="chat-row bot-row">
+                    <div class="bot-avatar">🌵</div>
+                    <div class="chat-message bot-message">
+                        <p>
+                            Hi Amina! I’m Cactus, your AI career assistant.
+                            What would you like to explore today?
+                        </p>
+                        <span>10:32 AM</span>
+                    </div>
+                </div>
+
+                <div class="chat-row user-row">
+                    <div class="chat-message user-message">
+                        <p>How can I improve my CV?</p>
+                        <span>10:33 AM</span>
+                    </div>
+                    <img src="{% static 'core/img/students/amina.png' %}" alt="Student" class="user-avatar">
+                </div>
+
+                <div class="chat-row bot-row">
+                    <div class="bot-avatar">🌵</div>
+                    <div class="chat-message bot-message large-message">
+                        <p><strong>Great question! Here are 5 quick tips:</strong></p>
+                        <ul>
+                            <li>Highlight your strongest skills and achievements.</li>
+                            <li>Use action verbs and measurable results.</li>
+                            <li>Keep it clear, concise and well-structured.</li>
+                            <li>Tailor your CV for each application.</li>
+                            <li>Add relevant projects and certificates.</li>
+                        </ul>
+                        <p>Would you like me to review your CV or create a template?</p>
+                        <span>10:34 AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="dynamic-chat-form">
+                <input type="text" placeholder="Ask me anything about your career...">
+                <button type="submit">➜</button>
+            </form>
+
+            <p class="ai-note">Cactus can make mistakes. Please verify important information.</p>
+        </section>
+    </section>
+
+    <section class="popular-questions">
+        <div class="ai-section-heading">
+            <span>Popular things to ask</span>
+            <h2>Start with one question</h2>
+        </div>
+
+        <div class="question-grid">
+            <button>Improve my CV</button>
+            <button>Find internships</button>
+            <button>Interview tips</button>
+            <button>Career roadmap</button>
+            <button>Skill recommendations</button>
+        </div>
+    </section>
+
+    <section class="ai-dashboard-cards">
+        <div class="ai-help-card">
+            <h3>Cactus can help you with</h3>
+            <ul>
+                <li>Career guidance and planning</li>
+                <li>CV and application review</li>
+                <li>Interview preparation</li>
+                <li>Finding opportunities</li>
+                <li>Skills and learning path</li>
+                <li>Mentor matching</li>
+            </ul>
+        </div>
+
+        <div class="career-progress-card">
+            <h3>Your career progress</h3>
+
+            <div class="progress-layout">
+                <div class="progress-circle">
+                    <strong>76%</strong>
+                    <span>Career Readiness</span>
+                </div>
+
+                <div class="progress-bars">
+                    <div>
+                        <span>Skills <b>82%</b></span>
+                        <div class="progress-line"><i style="width:82%"></i></div>
+                    </div>
+
+                    <div>
+                        <span>Experience <b>71%</b></span>
+                        <div class="progress-line"><i style="width:71%"></i></div>
+                    </div>
+
+                    <div>
+                        <span>CV Strength <b>64%</b></span>
+                        <div class="progress-line"><i style="width:64%"></i></div>
+                    </div>
+
+                    <div>
+                        <span>Interview Readiness <b>87%</b></span>
+                        <div class="progress-line"><i style="width:87%"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="outline-green-btn">Go to my dashboard</a>
+        </div>
+
+        <div class="specific-plan-card">
+            <h3>Need something specific?</h3>
+            <p>Describe your goal and Cactus will create a personalized plan for you.</p>
+            <a href="#" class="primary-btn">Create my plan</a>
+        </div>
+    </section>
+
+    <section class="ai-final-cta">
+        <div>
+            <span>✦</span>
+            <h2>Cactus is here for you, every step of the way.</h2>
+            <p>Your success is our mission. Let’s grow together.</p>
+        </div>
+
+        <a href="#" class="white-cta-btn">Start a new chat</a>
+    </section>
+
+</main>
+
+{% endblock %}

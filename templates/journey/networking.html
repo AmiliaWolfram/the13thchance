@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a>02 AI Analysis</a><a>03 Roadmap</a><a>04 Skill Tests</a><a>05 Projects</a><a>06 Portfolio</a><a>07 Career Score</a><a>08 Interview</a><a class="active">09 Networking</a><a>10 Jobs</a></aside>
+    <section class="journey-main"><div class="journey-top"><span class="badge">Mentor & Networking Hub</span><h1>AI found people who can help you grow.</h1><p>Connect with mentors, alumni and recruiters based on your goals.</p></div>
+        <div class="network-grid"><div class="network-card"><div class="avatar-small">DW</div><h3>Daniel Weber</h3><p>Senior Data Scientist · BMW</p><span>96% mentor match</span></div><div class="network-card"><div class="avatar-small">SJ</div><h3>Sarah Johnson</h3><p>HR Business Partner · Deloitte</p><span>91% recruiter match</span></div><div class="network-card"><div class="avatar-small">ML</div><h3>Mei Lin</h3><p>AI Researcher · TUM</p><span>88% learning match</span></div></div>
+        <div class="next-action"><a href="{% url 'journey:jobs' %}" class="primary-btn">Unlock Job Offers</a></div>
+    </section>
+</main>
+{% endblock %}

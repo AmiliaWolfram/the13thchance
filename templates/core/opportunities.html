@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="opportunities-page">
+
+    <section class="opportunities-hero">
+        <div class="opportunities-hero-overlay"></div>
+
+        <div class="opportunities-hero-content">
+            <div class="badge">Opportunities Hub</div>
+
+            <h1>
+                Find your next <span>internship, project or first job.</span>
+            </h1>
+
+            <p>
+                Search real opportunities, compare AI match scores and discover internships,
+                working student roles, projects and entry-level jobs that fit your skills and goals.
+            </p>
+
+            <div class="opportunities-search-box">
+                <input type="text" placeholder="Search by role, company, skill or city">
+                <select>
+                    <option>All types</option>
+                    <option>Internship</option>
+                    <option>Working Student</option>
+                    <option>Project</option>
+                    <option>Entry-level Job</option>
+                </select>
+                <button>Search</button>
+            </div>
+
+            <div class="opportunities-quick-tags">
+                <span>Data Analytics</span>
+                <span>Software</span>
+                <span>Business</span>
+                <span>Remote</span>
+                <span>90%+ AI Match</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="opportunities-dashboard">
+
+        <aside class="opportunities-sidebar">
+            <div class="filter-card">
+                <h3>Smart Filters</h3>
+
+                <div class="filter-group">
+                    <span>Opportunity Type</span>
+                    <label><input type="checkbox"> Internship</label>
+                    <label><input type="checkbox"> Working Student</label>
+                    <label><input type="checkbox"> Student Project</label>
+                    <label><input type="checkbox"> Entry-level Job</label>
+                </div>
+
+                <div class="filter-group">
+                    <span>Field</span>
+                    <label><input type="checkbox"> Data Analytics</label>
+                    <label><input type="checkbox"> Software Development</label>
+                    <label><input type="checkbox"> Business</label>
+                    <label><input type="checkbox"> Marketing</label>
+                </div>
+
+                <div class="filter-group">
+                    <span>Work Mode</span>
+                    <label><input type="checkbox"> Remote</label>
+                    <label><input type="checkbox"> Hybrid</label>
+                    <label><input type="checkbox"> On-site</label>
+                </div>
+
+                <div class="filter-group">
+                    <span>AI Match</span>
+                    <button class="filter-pill active">90%+</button>
+                    <button class="filter-pill">80%+</button>
+                    <button class="filter-pill">All matches</button>
+                </div>
+            </div>
+        </aside>
+
+        <section class="opportunities-results">
+            <div class="results-header">
+                <div>
+                    <span class="eyebrow">Recommended for you</span>
+                    <h2>Top opportunities</h2>
+                </div>
+
+                <button class="sort-btn">Sort by AI Match</button>
+            </div>
+
+            <div class="opportunity-card featured-opportunity">
+                <div class="opportunity-main">
+                    <div class="company-logo">DA</div>
+                    <div>
+                        <span class="job-tag">96% AI Match</span>
+                        <h3>Data Analyst Internship</h3>
+                        <p>GreenTech Solutions · Berlin · Hybrid · 6 months</p>
+                    </div>
+                </div>
+
+                <div class="skills-row">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                    <span>English B2</span>
+                </div>
+
+                <div class="opportunity-footer">
+                    <p>Great fit because your profile shows strong analytical skills and dashboard experience.</p>
+                    <a href="#" class="small-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <div class="opportunity-main">
+                    <div class="company-logo">AI</div>
+                    <div>
+                        <span class="job-tag">91% AI Match</span>
+                        <h3>AI Career Research Project</h3>
+                        <p>University Partner · Remote · Team project · 8 weeks</p>
+                    </div>
+                </div>
+
+                <div class="skills-row">
+                    <span>Research</span>
+                    <span>AI Tools</span>
+                    <span>Presentation</span>
+                </div>
+
+                <div class="opportunity-footer">
+                    <p>Build portfolio experience through a real interdisciplinary project.</p>
+                    <a href="#" class="small-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <div class="opportunity-main">
+                    <div class="company-logo">BI</div>
+                    <div>
+                        <span class="job-tag">88% AI Match</span>
+                        <h3>Junior Business Intelligence Role</h3>
+                        <p>Regional Employer Network · On-site · Entry-level</p>
+                    </div>
+                </div>
+
+                <div class="skills-row">
+                    <span>Excel</span>
+                    <span>Tableau</span>
+                    <span>Reporting</span>
+                    <span>Databases</span>
+                </div>
+
+                <div class="opportunity-footer">
+                    <p>A strong first professional step for students with analytics and reporting experience.</p>
+                    <a href="#" class="small-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <div class="opportunity-main">
+                    <div class="company-logo">UX</div>
+                    <div>
+                        <span class="job-tag">84% AI Match</span>
+                        <h3>Digital Product Design Internship</h3>
+                        <p>Startup Studio · Remote · 3 months</p>
+                    </div>
+                </div>
+
+                <div class="skills-row">
+                    <span>Figma</span>
+                    <span>UX Research</span>
+                    <span>Prototyping</span>
+                </div>
+
+                <div class="opportunity-footer">
+                    <p>Perfect for students who want to combine creativity, technology and user research.</p>
+                    <a href="#" class="small-btn">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <aside class="opportunities-insights">
+            <div class="insight-card">
+                <h3>Your AI Match</h3>
+                <div class="match-score">96%</div>
+                <p>Your strongest opportunities are currently in analytics, AI projects and digital transformation.</p>
+            </div>
+
+            <div class="insight-card light-card">
+                <h3>Improve your chances</h3>
+                <ul>
+                    <li>Upload one portfolio project</li>
+                    <li>Add your language level</li>
+                    <li>Complete AI skill assessment</li>
+                </ul>
+            </div>
+        </aside>
+
+    </section>
+
+</main>
+
+{% endblock %}

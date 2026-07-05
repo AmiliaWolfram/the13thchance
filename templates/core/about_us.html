@@ -1,0 +1,293 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="about-page">
+
+    <!-- ================= HERO ================= -->
+    <section class="about-hero">
+        <div class="about-hero-overlay"></div>
+
+        <div class="about-hero-content">
+            <div class="badge">About The 13th Chance</div>
+
+            <h1>
+                Different countries.<br>
+                <span>One shared vision.</span>
+            </h1>
+
+            <p>
+                The 13th Chance was created by an international team of students
+                who believe that every talented person deserves an equal opportunity
+                to discover their potential, gain experience and build a meaningful future.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= MISSION ================= -->
+    <section class="about-mission">
+        <div class="mission-card mission-dark">
+            <span>Our Mission</span>
+            <h2>Talent exists everywhere. Opportunities do not.</h2>
+            <p>
+                Our mission is to connect students, universities, employers and mentors
+                into one AI-powered ecosystem that helps young people grow with confidence,
+                build practical skills and access their first real career opportunities.
+            </p>
+        </div>
+
+        <div class="mission-card mission-light">
+            <span>Why We Started</span>
+            <h2>We saw the same problem in different countries.</h2>
+            <p>
+                During an international collaboration project, we realized that many students
+                face similar challenges: missing work experience, limited professional networks,
+                unclear career paths and not enough personalized guidance. This inspired us to build
+                The 13th Chance — a human-centered AI career ecosystem.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= DIFFERENCE ================= -->
+    <section class="about-difference">
+        <div class="section-title">
+            <span>What makes us different</span>
+            <h2>Built by students, for students.</h2>
+            <p>
+                We combine international perspectives, digital innovation and real student experience
+                to design a platform that understands the journey from study to employment.
+            </p>
+        </div>
+
+        <div class="difference-grid">
+            <div class="difference-card">
+                <div class="difference-icon">🌍</div>
+                <h3>International Perspective</h3>
+                <p>Our team brings experiences from different countries, cultures and education systems.</p>
+            </div>
+
+            <div class="difference-card">
+                <div class="difference-icon">💡</div>
+                <h3>Student-Centered Innovation</h3>
+                <p>We design around real student problems, not abstract assumptions.</p>
+            </div>
+
+            <div class="difference-card">
+                <div class="difference-icon">🤖</div>
+                <h3>AI-Powered Support</h3>
+                <p>AI helps personalize guidance, opportunities, roadmaps and skill development.</p>
+            </div>
+
+            <div class="difference-card">
+                <div class="difference-icon">🤝</div>
+                <h3>Built Through Collaboration</h3>
+                <p>The platform is based on teamwork between students, employers and universities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TEAM ================= -->
+    <section class="team-section">
+        <div class="section-title">
+            <span>Meet Our Team</span>
+            <h2>The people behind The 13th Chance.</h2>
+            <p>
+                We are an international student team united by one goal:
+                to create better career opportunities for young people around the world.
+            </p>
+        </div>
+
+        <div class="team-grid">
+
+            <article class="team-card">
+                <div class="team-photo-wrap">
+                    <img src="{% static 'core/img/team/amina.png' %}" alt="Amina Volkova" class="team-photo">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-topline">
+                        <span>🇰🇬 Kyrgyzstan · Germany</span>
+                    </div>
+
+                    <h3>Amina Volkova</h3>
+                    <p class="team-role">Founder & Product Vision</p>
+                    <p class="team-university">Hochschule Schmalkalden · M.Sc. Business Informatics & Digital Transformation</p>
+
+                    <p class="team-text">
+                        Amina combines mathematics, economics, data analytics, software development and digital transformation.
+                        Before moving to Germany, she worked in data analytics and research. Today, she develops digital business
+                        applications as a student programmer while building the vision behind The 13th Chance.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Data Analytics</span>
+                        <span>Django</span>
+                        <span>AI</span>
+                        <span>Product Vision</span>
+                        <span>Digital Transformation</span>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/amina-volkova-a02773238/" class="linkedin-btn" target="_blank">LinkedIn</a>
+                </div>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo-wrap">
+                    <img src="{% static 'core/img/team/yu.png' %}" alt="Yu Zhen" class="team-photo">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-topline">
+                        <span>🇨🇳 China · 🇨🇴 Colombia · Germany</span>
+                    </div>
+
+                    <h3>Yu Zhen</h3>
+                    <p class="team-role">International Business Student</p>
+                    <p class="team-university">Hochschule Schmalkalden</p>
+
+                    <p class="team-text">
+                        Born in China and raised in Colombia, Yu brings a unique international perspective to the team.
+                        As an exchange student in Germany, she enjoys trying new things, connecting with nature and learning
+                        through global collaboration.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>International Business</span>
+                        <span>Cross-cultural Communication</span>
+                        <span>Adaptability</span>
+                        <span>Teamwork</span>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/yu-zhen-451590350" class="linkedin-btn" target="_blank">LinkedIn</a>
+                </div>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo-wrap">
+                    <img src="{% static 'core/img/team/mia.png' %}" alt="Mia Wilson" class="team-photo">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-topline">
+                        <span>🇺🇸 United States · Germany</span>
+                    </div>
+
+                    <h3>Mia Wilson</h3>
+                    <p class="team-role">International Business Student</p>
+                    <p class="team-university">Hochschule Schmalkalden · 4th Semester</p>
+
+                    <p class="team-text">
+                        Mia studies International Business and Economics. She is adaptable, detail-oriented and brings strong
+                        time management skills to the team. She believes organizations attract young talent through growth
+                        opportunities and healthy work-life balance.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Time Management</span>
+                        <span>Adaptability</span>
+                        <span>Communication</span>
+                        <span>Organization</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo-wrap">
+                    <img src="{% static 'core/img/team/priscila.png' %}" alt="Priscila Fenoglio" class="team-photo">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-topline">
+                        <span>🇦🇷 Argentina</span>
+                    </div>
+
+                    <h3>Priscila Fenoglio</h3>
+                    <p class="team-role">International Relations Student</p>
+                    <p class="team-university">Universidad Siglo 21</p>
+
+                    <p class="team-text">
+                        Priscila is passionate about international cooperation, intercultural understanding and global issues.
+                        She believes places become attractive to young talent when they offer professional growth, quality education,
+                        innovation, cultural diversity and a good quality of life.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Communication</span>
+                        <span>Teamwork</span>
+                        <span>International Relations</span>
+                        <span>Global Cooperation</span>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/priscila-fenoglio-0246512b7" class="linkedin-btn" target="_blank">LinkedIn</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ================= VALUES ================= -->
+    <section class="values-section">
+        <div class="section-title">
+            <span>Our Values</span>
+            <h2>What we believe in.</h2>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <strong>Equal Opportunities</strong>
+                <p>Every student deserves a fair chance to grow and succeed.</p>
+            </div>
+            <div class="value-card">
+                <strong>Global Collaboration</strong>
+                <p>Different cultures and perspectives make better ideas possible.</p>
+            </div>
+            <div class="value-card">
+                <strong>AI for Good</strong>
+                <p>Technology should help people discover potential and make better choices.</p>
+            </div>
+            <div class="value-card">
+                <strong>Practical Growth</strong>
+                <p>Learning becomes powerful when it connects to real projects and experience.</p>
+            </div>
+            <div class="value-card">
+                <strong>Community</strong>
+                <p>Students, universities and employers should grow together.</p>
+            </div>
+            <div class="value-card">
+                <strong>Innovation</strong>
+                <p>We believe in building new solutions for old career problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= GLOBAL SECTION ================= -->
+    <section class="global-section">
+        <div class="global-card">
+            <span>Global Collaboration</span>
+            <h2>Different cultures. Different experiences. One common mission.</h2>
+
+            <div class="country-row">
+                <span>Kyrgyzstan</span>
+                <span>Germany</span>
+                <span>China</span>
+                <span>Colombia</span>
+                <span>United States</span>
+                <span>Argentina</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="about-cta">
+        <h2>Ready to become part of our journey?</h2>
+        <p>
+            Join The 13th Chance and help us build a future where students can grow,
+            connect and find opportunities that truly match their potential.
+        </p>
+        <a href="#" class="primary-btn">Join The Platform</a>
+    </section>
+
+</main>
+
+{% endblock %}

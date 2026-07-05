@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a>02 AI Analysis</a><a>03 Roadmap</a><a>04 Skill Tests</a><a class="active">05 Projects</a><a>06 Portfolio</a><a>07 Career Score</a><a>08 Interview</a><a>09 Networking</a><a>10 Jobs</a></aside>
+    <section class="journey-main"><div class="journey-top"><span class="badge">Practical Challenges</span><h1>Real tasks from real companies.</h1><p>Students prove their skills through practical business exercises.</p></div>
+        <div class="project-grid">
+            <div class="project-card"><span class="job-tag">Completed</span><h3>Sales Dashboard Challenge</h3><p>BMW Group · Power BI · 94%</p><div class="progress-line"><span style="width:94%"></span></div></div>
+            <div class="project-card"><span class="job-tag">In review</span><h3>SQL Customer Segmentation</h3><p>SAP Partner · SQL · 87%</p><div class="progress-line"><span style="width:87%"></span></div></div>
+            <div class="project-card"><span class="job-tag">Recommended</span><h3>Python Automation Task</h3><p>Siemens · Python · Estimated 4h</p><div class="progress-line"><span style="width:20%"></span></div></div>
+        </div>
+        <div class="next-action"><a href="{% url 'journey:portfolio' %}" class="primary-btn">Build Smart Portfolio</a></div>
+    </section>
+</main>
+{% endblock %}

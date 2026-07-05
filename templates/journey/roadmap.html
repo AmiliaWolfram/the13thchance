@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a>02 AI Analysis</a><a class="active">03 Roadmap</a><a>04 Skill Tests</a><a>05 Projects</a><a>06 Portfolio</a><a>07 Career Score</a><a>08 Interview</a><a>09 Networking</a><a>10 Jobs</a></aside>
+    <section class="journey-main"><div class="journey-top"><span class="badge">Personalized Roadmap</span><h1>Your path to becoming a <span>Data Analyst.</span></h1><p>Every completed step unlocks the next milestone.</p></div>
+        <div class="roadmap-timeline">
+            <div class="road-step done"><span>✓</span><h3>Python Basics</h3><p>Completed · 92%</p></div>
+            <div class="road-step done"><span>✓</span><h3>Excel Reporting</h3><p>Completed · 88%</p></div>
+            <div class="road-step active"><span>3</span><h3>SQL & Databases</h3><p>In progress · 64%</p></div>
+            <div class="road-step"><span>4</span><h3>BI Dashboard Project</h3><p>Next milestone</p></div>
+            <div class="road-step"><span>5</span><h3>Internship Applications</h3><p>Locked until portfolio is ready</p></div>
+        </div>
+        <div class="next-action"><a href="{% url 'journey:skills' %}" class="primary-btn">Go to Skill Tests</a></div>
+    </section>
+</main>
+{% endblock %}

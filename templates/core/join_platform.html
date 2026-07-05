@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="join-page">
+
+    <section class="join-hero">
+        <div class="join-content">
+            <div class="badge">Join The 13th Chance</div>
+
+            <h1>
+                Choose your path.<br>
+                <span>Start your future.</span>
+            </h1>
+
+            <p>
+                Join our AI-powered career ecosystem as a student or as a company.
+                Create your profile and become part of a platform that connects talent with real opportunities.
+            </p>
+
+            <div class="role-switch">
+                <button type="button" class="role-btn active" data-role="student">I am a Student</button>
+                <button type="button" class="role-btn" data-role="company">I represent a Company</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-form-section">
+
+        <div class="join-card student-form active-form">
+            <div class="form-header">
+                <h2>Student Registration</h2>
+                <p>Create your student profile and continue with a detailed skill assessment.</p>
+            </div>
+
+            <form method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="role" value="student">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Amina" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Volkova" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>University</label>
+                    <input type="text" placeholder="Hochschule Schmalkalden">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Study Program</label>
+                        <input type="text" placeholder="Business Informatics">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Semester</label>
+                        <input type="text" placeholder="4th Semester">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Career Interest</label>
+                    <select>
+                        <option>Data Analytics</option>
+                        <option>Software Development</option>
+                        <option>Business</option>
+                        <option>Marketing</option>
+                        <option>Design</option>
+                        <option>AI / Machine Learning</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="join-submit">Create Student Profile</button>
+            </form>
+        </div>
+
+        <div class="join-card company-form">
+            <div class="form-header">
+                <h2>Company Registration</h2>
+                <p>Create a company profile and continue with detailed hiring needs.</p>
+            </div>
+
+            <form method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="role" value="company">
+
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" placeholder="GreenTech Solutions" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Contact Person</label>
+                        <input type="text" placeholder="Anna Müller">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Company Email</label>
+                        <input type="email" placeholder="hr@company.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Industry</label>
+                    <select>
+                        <option>Technology</option>
+                        <option>Consulting</option>
+                        <option>Automotive</option>
+                        <option>Finance</option>
+                        <option>Education</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="join-submit">Create Company Profile</button>
+            </form>
+        </div>
+
+    </section>
+
+</main>
+
+<script>
+    const roleButtons = document.querySelectorAll(".role-btn");
+    const studentForm = document.querySelector(".student-form");
+    const companyForm = document.querySelector(".company-form");
+
+    roleButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            roleButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            if (button.dataset.role === "student") {
+                studentForm.classList.add("active-form");
+                companyForm.classList.remove("active-form");
+            } else {
+                companyForm.classList.add("active-form");
+                studentForm.classList.remove("active-form");
+            }
+        });
+    });
+</script>
+
+{% endblock %}

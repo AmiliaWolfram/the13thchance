@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a>02 AI Analysis</a><a>03 Roadmap</a><a>04 Skill Tests</a><a>05 Projects</a><a>06 Portfolio</a><a class="active">07 Career Score</a><a>08 Interview</a><a>09 Networking</a><a>10 Jobs</a></aside>
+    <section class="journey-main"><div class="journey-top"><span class="badge">Career Readiness</span><h1>You are <span>87%</span> career ready.</h1><p>Your dashboard shows what is already strong and what needs improvement.</p></div>
+        <div class="readiness-grid"><div class="readiness-main"><strong>87%</strong><p>Overall Career Readiness</p></div><div class="readiness-bars"><p>Technical Skills <span>92%</span></p><div class="progress-line"><span style="width:92%"></span></div><p>Workplace Readiness <span>84%</span></p><div class="progress-line"><span style="width:84%"></span></div><p>Personal Readiness <span>81%</span></p><div class="progress-line"><span style="width:81%"></span></div></div></div>
+        <div class="next-action"><a href="{% url 'journey:interview' %}" class="primary-btn">Practice AI Interview</a></div>
+    </section>
+</main>
+{% endblock %}

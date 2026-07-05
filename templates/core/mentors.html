@@ -1,0 +1,353 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="mentors-page">
+
+    <section class="mentors-hero">
+        <div class="mentors-hero-overlay"></div>
+
+        <div class="mentors-hero-content">
+            <div class="badge">Our Mentors</div>
+
+            <h1>
+                Learn from experts. <span>Grow your future.</span>
+            </h1>
+
+            <p>
+                Connect with experienced professionals, researchers and industry leaders
+                who help students build confidence, improve portfolios and prepare for real career opportunities.
+            </p>
+
+            <div class="mentors-hero-actions">
+                <a href="#mentor-list" class="primary-btn">Find Your Mentor</a>
+                <a href="#student-stories" class="secondary-btn">Student Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mentor-benefits-section">
+        <div class="section-title compact-title">
+            <span>Why learn with our mentors?</span>
+            <h2>Real experience. Real guidance. <span>Real impact.</span></h2>
+        </div>
+
+        <div class="mentor-benefits-grid">
+            <div class="mentor-benefit-card">
+                <div class="mentor-benefit-icon">✦</div>
+                <h3>Industry Experts</h3>
+                <p>Mentors from tech companies, universities and international organizations.</p>
+            </div>
+
+            <div class="mentor-benefit-card">
+                <div class="mentor-benefit-icon">✦</div>
+                <h3>Personalized Support</h3>
+                <p>One-on-one guidance tailored to your skills, goals and current level.</p>
+            </div>
+
+            <div class="mentor-benefit-card">
+                <div class="mentor-benefit-icon">✦</div>
+                <h3>Career Growth</h3>
+                <p>Improve your CV, portfolio, interview skills and professional confidence.</p>
+            </div>
+
+            <div class="mentor-benefit-card">
+                <div class="mentor-benefit-icon">✦</div>
+                <h3>Global Community</h3>
+                <p>Connect with people from different industries, countries and backgrounds.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mentor-search-section" id="mentor-list">
+        <div class="mentor-search-bar">
+            <div class="mentor-search-input">
+                <span>⌕</span>
+                <input type="text" placeholder="Search mentors by name, skill or company...">
+            </div>
+
+            <select>
+                <option>Expertise</option>
+                <option>Data Science</option>
+                <option>Software Engineering</option>
+                <option>Product Management</option>
+                <option>UX/UI Design</option>
+                <option>HR & Career Coaching</option>
+            </select>
+
+            <select>
+                <option>Industry</option>
+                <option>Tech</option>
+                <option>Automotive</option>
+                <option>Consulting</option>
+                <option>University</option>
+            </select>
+
+            <select>
+                <option>Experience</option>
+                <option>3+ years</option>
+                <option>5+ years</option>
+                <option>10+ years</option>
+            </select>
+
+            <button>More Filters</button>
+        </div>
+
+        <div class="mentors-list-grid">
+
+            <article class="mentor-profile-card">
+                <div class="mentor-photo-wrap">
+                    <img src="{% static 'core/img/mentors/daniel.png' %}" alt="Daniel Weber">
+                    <span class="top-mentor-badge">Top Mentor</span>
+                </div>
+
+                <div class="mentor-card-body">
+                    <h3>Daniel Weber</h3>
+                    <p class="mentor-role">Senior Data Scientist</p>
+                    <p class="mentor-company">BMW Group</p>
+
+                    <div class="mentor-rating">★★★★★ <strong>4.9</strong> <span>(128 reviews)</span></div>
+
+                    <div class="mentor-skills">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>SQL</span>
+                    </div>
+
+                    <ul class="mentor-meta">
+                        <li>248 students mentored</li>
+                        <li>9+ years experience</li>
+                        <li>English, German</li>
+                    </ul>
+
+                    <a href="#" class="mentor-profile-btn">View Profile</a>
+                </div>
+            </article>
+
+            <article class="mentor-profile-card">
+                <div class="mentor-photo-wrap">
+                    <img src="{% static 'core/img/mentors/anna.png' %}" alt="Anna Müller">
+                </div>
+
+                <div class="mentor-card-body">
+                    <h3>Anna Müller</h3>
+                    <p class="mentor-role">Product Manager</p>
+                    <p class="mentor-company">SAP</p>
+
+                    <div class="mentor-rating">★★★★★ <strong>4.8</strong> <span>(96 reviews)</span></div>
+
+                    <div class="mentor-skills">
+                        <span>Product Strategy</span>
+                        <span>Agile</span>
+                        <span>UX</span>
+                    </div>
+
+                    <ul class="mentor-meta">
+                        <li>186 students mentored</li>
+                        <li>7+ years experience</li>
+                        <li>English, German</li>
+                    </ul>
+
+                    <a href="#" class="mentor-profile-btn">View Profile</a>
+                </div>
+            </article>
+
+            <article class="mentor-profile-card">
+                <div class="mentor-photo-wrap">
+                    <img src="{% static 'core/img/mentors/lukas.png' %}" alt="Lukas Schmidt">
+                </div>
+
+                <div class="mentor-card-body">
+                    <h3>Lukas Schmidt</h3>
+                    <p class="mentor-role">Software Engineer</p>
+                    <p class="mentor-company">Siemens</p>
+
+                    <div class="mentor-rating">★★★★★ <strong>4.9</strong> <span>(112 reviews)</span></div>
+
+                    <div class="mentor-skills">
+                        <span>Java</span>
+                        <span>Spring</span>
+                        <span>Cloud</span>
+                    </div>
+
+                    <ul class="mentor-meta">
+                        <li>203 students mentored</li>
+                        <li>8+ years experience</li>
+                        <li>English, German</li>
+                    </ul>
+
+                    <a href="#" class="mentor-profile-btn">View Profile</a>
+                </div>
+            </article>
+
+            <article class="mentor-profile-card">
+                <div class="mentor-photo-wrap">
+                    <img src="{% static 'core/img/mentors/mei.png' %}" alt="Mei Lin">
+                </div>
+
+                <div class="mentor-card-body">
+                    <h3>Mei Lin</h3>
+                    <p class="mentor-role">AI Researcher</p>
+                    <p class="mentor-company">Technical University of Munich</p>
+
+                    <div class="mentor-rating">★★★★★ <strong>4.9</strong> <span>(87 reviews)</span></div>
+
+                    <div class="mentor-skills">
+                        <span>Deep Learning</span>
+                        <span>NLP</span>
+                        <span>PyTorch</span>
+                    </div>
+
+                    <ul class="mentor-meta">
+                        <li>167 students mentored</li>
+                        <li>6+ years experience</li>
+                        <li>English, Chinese</li>
+                    </ul>
+
+                    <a href="#" class="mentor-profile-btn">View Profile</a>
+                </div>
+            </article>
+
+            <article class="mentor-profile-card">
+                <div class="mentor-photo-wrap">
+                    <img src="{% static 'core/img/mentors/carlos.png' %}" alt="Carlos Martin">
+                </div>
+
+                <div class="mentor-card-body">
+                    <h3>Carlos Martin</h3>
+                    <p class="mentor-role">UX/UI Designer</p>
+                    <p class="mentor-company">Figma</p>
+
+                    <div class="mentor-rating">★★★★★ <strong>4.7</strong> <span>(73 reviews)</span></div>
+
+                    <div class="mentor-skills">
+                        <span>UI/UX</span>
+                        <span>Design Thinking</span>
+                        <span>Figma</span>
+                    </div>
+
+                    <ul class="mentor-meta">
+                        <li>154 students mentored</li>
+                        <li>7+ years experience</li>
+                        <li>English, Spanish</li>
+                    </ul>
+
+                    <a href="#" class="mentor-profile-btn">View Profile</a>
+                </div>
+            </article>
+
+            <article class="mentor-profile-card">
+                <div class="mentor-photo-wrap">
+                    <img src="{% static 'core/img/mentors/sarah.png' %}" alt="Sarah Johnson">
+                </div>
+
+                <div class="mentor-card-body">
+                    <h3>Sarah Johnson</h3>
+                    <p class="mentor-role">HR Business Partner</p>
+                    <p class="mentor-company">Deloitte</p>
+
+                    <div class="mentor-rating">★★★★★ <strong>4.8</strong> <span>(105 reviews)</span></div>
+
+                    <div class="mentor-skills">
+                        <span>Talent Development</span>
+                        <span>HR</span>
+                        <span>Coaching</span>
+                    </div>
+
+                    <ul class="mentor-meta">
+                        <li>193 students mentored</li>
+                        <li>10+ years experience</li>
+                        <li>English</li>
+                    </ul>
+
+                    <a href="#" class="mentor-profile-btn">View Profile</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="mentor-stats-section">
+        <div class="mentor-stat-item">
+            <strong>120+</strong>
+            <span>Expert Mentors</span>
+        </div>
+
+        <div class="mentor-stat-item">
+            <strong>30+</strong>
+            <span>Industries</span>
+        </div>
+
+        <div class="mentor-stat-item">
+            <strong>5,000+</strong>
+            <span>Students Mentored</span>
+        </div>
+
+        <div class="mentor-stat-item">
+            <strong>98%</strong>
+            <span>Satisfaction Rate</span>
+        </div>
+    </section>
+
+    <section class="student-stories-section" id="student-stories">
+        <div class="section-title compact-title">
+            <span>Student Stories</span>
+            <h2>Voices of our students</h2>
+            <p>Real stories from students who have grown with the support of our mentors.</p>
+        </div>
+
+        <div class="student-stories-grid">
+            <article class="student-story-card">
+                <div class="quote-mark">“</div>
+                <p>
+                    My mentor helped me build confidence in my skills and guided me to get my first internship at a top tech company.
+                </p>
+
+                <div class="student-story-author">
+                    <img src="{% static 'core/img/mentors/anna.png' %}" alt="Emily Johnson">
+                    <div>
+                        <strong>Emily Johnson</strong>
+                        <span>Data Science Student</span>
+                    </div>
+                    <b>★ 5.0</b>
+                </div>
+            </article>
+
+            <article class="student-story-card">
+                <div class="quote-mark">“</div>
+                <p>
+                    The feedback and support I received were invaluable. My mentor pushed me to grow and helped me land my dream job.
+                </p>
+
+                <div class="student-story-author">
+                    <img src="{% static 'core/img/mentors/daniel.png' %}" alt="David Müller">
+                    <div>
+                        <strong>David Müller</strong>
+                        <span>Business Informatics Student</span>
+                    </div>
+                    <b>★ 5.0</b>
+                </div>
+            </article>
+
+            <article class="student-story-card">
+                <div class="quote-mark">“</div>
+                <p>
+                    Thanks to my mentor, I discovered my passion for UX design and built a portfolio I am truly proud of.
+                </p>
+
+                <div class="student-story-author">
+                    <img src="{% static 'core/img/mentors/mei.png' %}" alt="Aisha Khan">
+                    <div>
+                        <strong>Aisha Khan</strong>
+                        <span>Design Student</span>
+                    </div>
+                    <b>★ 5.0</b>
+                </div>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+{% endblock %}

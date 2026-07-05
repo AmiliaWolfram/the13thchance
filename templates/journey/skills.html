@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a>02 AI Analysis</a><a>03 Roadmap</a><a class="active">04 Skill Tests</a><a>05 Projects</a><a>06 Portfolio</a><a>07 Career Score</a><a>08 Interview</a><a>09 Networking</a><a>10 Jobs</a></aside>
+    <section class="journey-main"><div class="journey-top"><span class="badge">Verified Skills</span><h1>Your skills are tested and scored.</h1><p>Employers see evidence, not just words on a CV.</p></div>
+        <div class="skills-test-grid">
+            <div class="skill-test-card"><h3>Python</h3><p>Logic, lists, functions, data handling</p><span class="test-status passed">92% Verified</span></div>
+            <div class="skill-test-card"><h3>SQL</h3><p>Queries, joins, filtering, aggregation</p><span class="test-status in-progress">64% In progress</span></div>
+            <div class="skill-test-card"><h3>Excel</h3><p>Pivot tables, formulas, reporting</p><span class="test-status passed">88% Verified</span></div>
+            <div class="skill-test-card"><h3>Communication</h3><p>Presentation, teamwork, clarity</p><span class="test-status passed">81% Verified</span></div>
+        </div>
+        <div class="onboarding-card test-preview-card"><div><span class="eyebrow">Sample Assessment</span><h2>SQL Question</h2><p>Which JOIN returns only matching records from both tables?</p></div><div class="test-question"><label><input type="radio" checked> INNER JOIN</label><label><input type="radio"> LEFT JOIN</label><label><input type="radio"> FULL JOIN</label><button class="join-submit" type="button">Answer submitted · Correct</button></div></div>
+        <div class="next-action"><a href="{% url 'journey:projects' %}" class="primary-btn">Open Practical Projects</a></div>
+    </section>
+</main>
+{% endblock %}

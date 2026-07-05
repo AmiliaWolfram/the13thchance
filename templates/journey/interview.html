@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a>02 AI Analysis</a><a>03 Roadmap</a><a>04 Skill Tests</a><a>05 Projects</a><a>06 Portfolio</a><a>07 Career Score</a><a class="active">08 Interview</a><a>09 Networking</a><a>10 Jobs</a></aside>
+    <section class="journey-main"><div class="journey-top"><span class="badge">AI Interview Simulator</span><h1>Your interview score is <span>85%</span>.</h1><p>Cactus AI tested communication, confidence and technical answers.</p></div>
+        <div class="interview-window"><div class="message bot">Hi Amina. Tell me about a data project you are proud of.</div><div class="message user">I built a sales dashboard using Python and Power BI to show monthly performance.</div><div class="message bot">Great answer. Add more details about business impact and measurable results.</div></div>
+        <div class="analysis-grid"><div class="score-card"><span>Communication</span><strong>86%</strong></div><div class="score-card"><span>Confidence</span><strong>79%</strong></div><div class="score-card"><span>Technical clarity</span><strong>90%</strong></div></div>
+        <div class="next-action"><a href="{% url 'journey:networking' %}" class="primary-btn">Open Networking Hub</a></div>
+    </section>
+</main>
+{% endblock %}

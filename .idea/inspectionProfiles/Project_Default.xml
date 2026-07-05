@@ -1,0 +1,40 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="asgiref" />
+          <option value="brotli" />
+          <option value="cffi" />
+          <option value="cssselect2" />
+          <option value="Django" />
+          <option value="django-jazzmin" />
+          <option value="docxtpl" />
+          <option value="fonttools" />
+          <option value="gunicorn" />
+          <option value="Jinja2" />
+          <option value="lxml" />
+          <option value="MarkupSafe" />
+          <option value="packaging" />
+          <option value="pillow" />
+          <option value="psycopg" />
+          <option value="psycopg-binary" />
+          <option value="pycparser" />
+          <option value="pydyf" />
+          <option value="pyphen" />
+          <option value="python-docx" />
+          <option value="python-dotenv" />
+          <option value="sqlparse" />
+          <option value="tinycss2" />
+          <option value="tinyhtml5" />
+          <option value="typing_extensions" />
+          <option value="weasyprint" />
+          <option value="webencodings" />
+          <option value="zopfli" />
+          <option value="django-auth-ldap" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

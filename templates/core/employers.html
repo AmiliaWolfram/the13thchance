@@ -1,0 +1,420 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="employers-page">
+
+    <section class="employers-hero">
+        <div class="employers-hero-overlay"></div>
+
+        <div class="employers-hero-content">
+            <div class="badge">For Employers</div>
+
+            <h1>
+                Find young talent <span>before everyone else.</span>
+            </h1>
+
+            <p>
+                Discover verified student profiles, publish internships and projects,
+                compare AI match scores and build strong talent pipelines with universities.
+            </p>
+
+            <div class="employers-hero-actions">
+                <a href="#company-offers" class="primary-btn">Explore Companies</a>
+                <a href="#post-opportunity" class="secondary-btn">Post Opportunity</a>
+            </div>
+
+            <div class="employers-hero-stats">
+                <div>
+                    <strong>250+</strong>
+                    <span>Partner employers</span>
+                </div>
+                <div>
+                    <strong>5,000+</strong>
+                    <span>Student profiles</span>
+                </div>
+                <div>
+                    <strong>92%</strong>
+                    <span>Average AI match</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="employer-value-section">
+        <div class="section-title compact-title">
+            <span>Employer Network</span>
+            <h2>Companies can publish real opportunities and find the right students faster.</h2>
+            <p>
+                The 13th Chance connects companies with students through internships,
+                working student roles, student projects and entry-level positions.
+            </p>
+        </div>
+
+        <div class="employer-benefit-grid">
+            <div class="employer-benefit-card">
+                <div class="benefit-icon">✓</div>
+                <h3>Verified Skills</h3>
+                <p>See what students can actually do through portfolios, projects and skill badges.</p>
+            </div>
+
+            <div class="employer-benefit-card">
+                <div class="benefit-icon">AI</div>
+                <h3>AI Matching</h3>
+                <p>Receive candidates ranked by skills, goals, language level and availability.</p>
+            </div>
+
+            <div class="employer-benefit-card">
+                <div class="benefit-icon">↗</div>
+                <h3>Early Talent Pipeline</h3>
+                <p>Connect with students before graduation and build long-term relationships.</p>
+            </div>
+
+            <div class="employer-benefit-card">
+                <div class="benefit-icon">∞</div>
+                <h3>University Collaboration</h3>
+                <p>Create projects, challenges and internship programs together with universities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="company-offers-section" id="company-offers">
+        <div class="results-header employers-header">
+            <div>
+                <span class="eyebrow">Company offers</span>
+                <h2>Open opportunities from partner companies</h2>
+            </div>
+
+            <button class="sort-btn">View all companies</button>
+        </div>
+
+        <div class="company-grid">
+
+            <article class="company-card company-featured">
+                <div class="company-top">
+                    <div class="company-logo-img">
+                        <img src="{% static 'core/img/companies/bmw.png' %}" alt="BMW Group logo">
+                    </div>
+                    <div>
+                        <h3>BMW Group</h3>
+                        <p>Automotive · Munich · Hybrid</p>
+                    </div>
+                </div>
+
+                <div class="company-offer-tag">Featured employer</div>
+
+                <h4>Data Analyst Internship</h4>
+                <p class="company-description">
+                    Work with production and business data, build dashboards and support digital transformation projects.
+                </p>
+
+                <div class="company-skills">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                </div>
+
+                <div class="company-bottom">
+                    <strong>27 matched students</strong>
+                    <a href="#" class="small-btn">View Offer</a>
+                </div>
+            </article>
+
+            <article class="company-card">
+                <div class="company-top">
+                    <div class="company-logo-img">
+                        <img src="{% static 'core/img/companies/sap.png' %}" alt="SAP logo">
+                    </div>
+                    <div>
+                        <h3>SAP</h3>
+                        <p>Software · Walldorf · Remote</p>
+                    </div>
+                </div>
+
+                <h4>Product Management Working Student</h4>
+                <p class="company-description">
+                    Support product discovery, user research and roadmap planning for cloud-based business products.
+                </p>
+
+                <div class="company-skills">
+                    <span>Product Strategy</span>
+                    <span>Agile</span>
+                    <span>UX</span>
+                </div>
+
+                <div class="company-bottom">
+                    <strong>18 matched students</strong>
+                    <a href="#" class="small-btn">View Offer</a>
+                </div>
+            </article>
+
+            <article class="company-card">
+                <div class="company-top">
+                    <div class="company-logo-img">
+                        <img src="{% static 'core/img/companies/siemens.png' %}" alt="Siemens logo">
+                    </div>
+                    <div>
+                        <h3>Siemens</h3>
+                        <p>Technology · Berlin · Hybrid</p>
+                    </div>
+                </div>
+
+                <h4>Junior Software Engineering Role</h4>
+                <p class="company-description">
+                    Join an engineering team and contribute to digital industrial solutions and internal platforms.
+                </p>
+
+                <div class="company-skills">
+                    <span>Java</span>
+                    <span>Spring</span>
+                    <span>Cloud</span>
+                </div>
+
+                <div class="company-bottom">
+                    <strong>32 matched students</strong>
+                    <a href="#" class="small-btn">View Offer</a>
+                </div>
+            </article>
+
+            <article class="company-card">
+                <div class="company-top">
+                    <div class="company-logo-img">
+                        <img src="{% static 'core/img/companies/deloitte.png' %}" alt="Deloitte logo">
+                    </div>
+                    <div>
+                        <h3>Deloitte</h3>
+                        <p>Consulting · Frankfurt · Hybrid</p>
+                    </div>
+                </div>
+
+                <h4>Digital Transformation Project</h4>
+                <p class="company-description">
+                    Collaborate on process analysis, automation ideas and business technology concepts.
+                </p>
+
+                <div class="company-skills">
+                    <span>Consulting</span>
+                    <span>Analytics</span>
+                    <span>Presentation</span>
+                </div>
+
+                <div class="company-bottom">
+                    <strong>21 matched students</strong>
+                    <a href="#" class="small-btn">View Offer</a>
+                </div>
+            </article>
+
+            <article class="company-card">
+                <div class="company-top">
+                    <div class="company-logo-img">
+                        <img src="{% static 'core/img/companies/bosch.png' %}" alt="Bosch logo">
+                    </div>
+                    <div>
+                        <h3>Bosch</h3>
+                        <p>Engineering · Stuttgart · On-site</p>
+                    </div>
+                </div>
+
+                <h4>AI Process Optimization Internship</h4>
+                <p class="company-description">
+                    Explore how AI tools can improve workflows, reporting and operational decision-making.
+                </p>
+
+                <div class="company-skills">
+                    <span>AI Tools</span>
+                    <span>Python</span>
+                    <span>Processes</span>
+                </div>
+
+                <div class="company-bottom">
+                    <strong>15 matched students</strong>
+                    <a href="#" class="small-btn">View Offer</a>
+                </div>
+            </article>
+
+            <article class="company-card">
+                <div class="company-top">
+                    <div class="company-logo-img">
+                        <img src="{% static 'core/img/companies/startup.png' %}" alt="Startup Studio logo">
+                    </div>
+                    <div>
+                        <h3>Startup Studio</h3>
+                        <p>Startup · Remote · Flexible</p>
+                    </div>
+                </div>
+
+                <h4>UX/UI Design Internship</h4>
+                <p class="company-description">
+                    Create prototypes, test ideas with users and build a strong portfolio with real product tasks.
+                </p>
+
+                <div class="company-skills">
+                    <span>Figma</span>
+                    <span>UX Research</span>
+                    <span>Design</span>
+                </div>
+
+                <div class="company-bottom">
+                    <strong>24 matched students</strong>
+                    <a href="#" class="small-btn">View Offer</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="employer-dashboard-preview">
+        <div class="dashboard-copy">
+            <span class="eyebrow">Employer Dashboard</span>
+            <h2>Manage candidates, offers and AI recommendations in one place.</h2>
+            <p>
+                Employers can publish roles, review matched students, compare portfolios,
+                schedule interviews and track hiring progress without losing context.
+            </p>
+            <a href="#post-opportunity" class="primary-btn">Post an Opportunity</a>
+        </div>
+
+        <div class="employer-dashboard-card">
+            <div class="dash-topbar">
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="dash-content">
+                <div class="dash-column">
+                    <h4>Recommended candidates</h4>
+                    <div class="candidate-row">
+                        <div class="candidate-avatar">AV</div>
+                        <div>
+                            <strong>Amina V.</strong>
+                            <p>96% match · Python · SQL</p>
+                        </div>
+                    </div>
+                    <div class="candidate-row">
+                        <div class="candidate-avatar">MK</div>
+                        <div>
+                            <strong>Maria K.</strong>
+                            <p>91% match · Tableau · BI</p>
+                        </div>
+                    </div>
+                    <div class="candidate-row">
+                        <div class="candidate-avatar">DL</div>
+                        <div>
+                            <strong>David L.</strong>
+                            <p>88% match · Java · Cloud</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-column green-column">
+                    <h4>Open offers</h4>
+                    <div class="offer-mini-card">
+                        <strong>Data Analyst Internship</strong>
+                        <span>27 candidates</span>
+                    </div>
+                    <div class="offer-mini-card">
+                        <strong>AI Project</strong>
+                        <span>15 candidates</span>
+                    </div>
+                    <div class="offer-mini-card">
+                        <strong>Working Student BI</strong>
+                        <span>19 candidates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="employer-process-section">
+        <div class="section-title compact-title">
+            <span>How employers use it</span>
+            <h2>From publishing an offer to hiring the right student.</h2>
+        </div>
+
+        <div class="employer-process-grid">
+            <div class="process-card">
+                <span>01</span>
+                <h3>Create company profile</h3>
+                <p>Show your mission, industry, culture and open opportunities.</p>
+            </div>
+
+            <div class="process-card">
+                <span>02</span>
+                <h3>Publish opportunities</h3>
+                <p>Add internships, projects, working student roles or first jobs.</p>
+            </div>
+
+            <div class="process-card">
+                <span>03</span>
+                <h3>Review AI matches</h3>
+                <p>See students whose skills and goals fit your offer best.</p>
+            </div>
+
+            <div class="process-card">
+                <span>04</span>
+                <h3>Hire and grow</h3>
+                <p>Invite students, mentor them and build your future team.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="employer-testimonials">
+        <div class="section-title compact-title">
+            <span>Partner Stories</span>
+            <h2>Trusted by companies looking for future talent.</h2>
+        </div>
+
+        <div class="testimonial-grid employer-testimonial-grid">
+            <div class="testimonial-card">
+                <p>
+                    “We found motivated students with real project experience instead of only reading CVs.”
+                </p>
+                <div class="testimonial-author">
+                    <img src="{% static 'core/img/students/thomas.png' %}" alt="Thomas K.">
+                    <div>
+                        <strong>Thomas K.</strong>
+                        <span>HR Manager, BMW Group</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p>
+                    “The AI match score helped us quickly understand which candidates were ready for our project.”
+                </p>
+                <div class="testimonial-author">
+                    <img src="{% static 'core/img/students/julia.png' %}" alt="Julia R.">
+                    <div>
+                        <strong>Julia R.</strong>
+                        <span>Talent Partner, SAP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p>
+                    “It is a strong bridge between university learning and real company needs.”
+                </p>
+                <div class="testimonial-author">
+                    <img src="{% static 'core/img/students/mark.png' %}" alt="Mark S.">
+                    <div>
+                        <strong>Mark S.</strong>
+                        <span>Innovation Lead, Siemens</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="employer-cta" id="post-opportunity">
+        <div>
+            <span class="eyebrow">Join as employer</span>
+            <h2>Ready to meet your next generation of talent?</h2>
+            <p>Publish your first offer and receive AI-matched student profiles.</p>
+        </div>
+        <a href="#" class="primary-btn">Join as Employer</a>
+    </section>
+
+</main>
+
+{% endblock %}

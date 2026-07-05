@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="journey-app">
+    <aside class="journey-sidebar"><h3>Career Journey</h3><a>01 Profile</a><a>02 AI Analysis</a><a>03 Roadmap</a><a>04 Skill Tests</a><a>05 Projects</a><a class="active">06 Portfolio</a><a>07 Career Score</a><a>08 Interview</a><a>09 Networking</a><a>10 Jobs</a></aside>
+    <section class="journey-main"><div class="journey-top"><span class="badge">Smart Portfolio</span><h1>Your achievements are collected automatically.</h1><p>Employers can see verified evidence of your abilities.</p></div>
+        <div class="portfolio-preview"><div class="portfolio-header"><h2>Amina Volkova · Data Analytics Portfolio</h2><span>Portfolio strength: 91%</span></div><div class="portfolio-grid"><div><strong>3</strong><p>Verified skill tests</p></div><div><strong>2</strong><p>Company projects</p></div><div><strong>4</strong><p>Certificates</p></div><div><strong>1</strong><p>GitHub repository</p></div></div></div>
+        <div class="project-grid"><div class="project-card"><h3>Power BI Sales Dashboard</h3><p>Verified by company evaluator · 94%</p></div><div class="project-card"><h3>Python Data Cleaning Script</h3><p>GitHub linked · AI reviewed</p></div><div class="project-card"><h3>Market Research Presentation</h3><p>University project · Excellent</p></div></div>
+        <div class="next-action"><a href="{% url 'journey:career_score' %}" class="primary-btn">Check Career Score</a></div>
+    </section>
+</main>
+{% endblock %}

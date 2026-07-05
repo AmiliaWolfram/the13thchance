@@ -1,0 +1,258 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="students-page">
+
+    <section class="students-hero">
+        <div class="students-hero-overlay"></div>
+
+        <div class="students-hero-content">
+            <div class="badge">For Students</div>
+
+            <h1>
+                Build your future <span>before graduation.</span>
+            </h1>
+
+            <p>
+                Discover your strengths, create a smart portfolio, connect with mentors
+                and find internships, projects and first jobs that match your potential.
+            </p>
+
+            <div class="students-hero-actions">
+                <a href="{% url 'core:opportunities' %}" class="primary-btn">Find Opportunities</a>
+                <a href="{% url 'core:ai_assistant' %}" class="secondary-btn">Ask AI Assistant</a>
+            </div>
+
+            <div class="student-hero-stats">
+                <div>
+                    <strong>96%</strong>
+                    <span>Career Match</span>
+                </div>
+                <div>
+                    <strong>7</strong>
+                    <span>Growth Steps</span>
+                </div>
+                <div>
+                    <strong>120+</strong>
+                    <span>Expert Mentors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="student-dashboard-section">
+        <div class="student-profile-card">
+            <div class="student-avatar-wrap">
+                <img src="{% static 'core/img/student-amina.png' %}" alt="Student profile photo">
+            </div>
+
+            <h3>Amina Volkova</h3>
+            <p>Business Informatics & Digital Transformation</p>
+
+            <div class="student-progress-box">
+                <div class="progress-item">
+                    <span>Career Readiness</span>
+                    <strong>76%</strong>
+                </div>
+                <div class="progress-bar"><div style="width: 76%;"></div></div>
+            </div>
+
+            <div class="student-profile-tags">
+                <span>Python</span>
+                <span>Data Analytics</span>
+                <span>Django</span>
+                <span>German B2</span>
+            </div>
+        </div>
+
+        <div class="student-dashboard-preview">
+            <div class="dashboard-topline">
+                <div>
+                    <span class="eyebrow">Your AI Dashboard</span>
+                    <h2>Hello, Amina! Ready to grow today?</h2>
+                </div>
+                <span class="dashboard-status">Great match</span>
+            </div>
+
+            <div class="student-mini-grid">
+                <div class="student-mini-card">
+                    <span>Recommended Internship</span>
+                    <h3>Junior Data Analyst</h3>
+                    <p>91% AI match · Berlin · Hybrid</p>
+                </div>
+
+                <div class="student-mini-card">
+                    <span>Suggested Mentor</span>
+                    <h3>Daniel Weber</h3>
+                    <p>Senior Data Scientist · BMW Group</p>
+                </div>
+
+                <div class="student-mini-card">
+                    <span>Next Skill</span>
+                    <h3>Business Communication</h3>
+                    <p>Improve confidence for interviews.</p>
+                </div>
+
+                <div class="student-mini-card">
+                    <span>Portfolio Goal</span>
+                    <h3>Upload Python Project</h3>
+                    <p>Show your practical experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="student-benefits-section">
+        <div class="section-title compact-title">
+            <span>Student Tools</span>
+            <h2>Everything you need to become job-ready.</h2>
+            <p>
+                The 13th Chance supports students from the first semester until the first professional opportunity.
+            </p>
+        </div>
+
+        <div class="student-benefits-grid">
+            <div class="student-benefit-card">
+                <div class="student-icon">AI</div>
+                <h3>AI Career Coach</h3>
+                <p>Get personal recommendations, career direction and daily growth tasks.</p>
+            </div>
+
+            <div class="student-benefit-card">
+                <div class="student-icon">CV</div>
+                <h3>Smart Portfolio</h3>
+                <p>Collect projects, certificates, achievements and mentor feedback in one place.</p>
+            </div>
+
+            <div class="student-benefit-card">
+                <div class="student-icon">↗</div>
+                <h3>Opportunity Matching</h3>
+                <p>Find internships, working student jobs, real projects and entry-level roles.</p>
+            </div>
+
+            <div class="student-benefit-card">
+                <div class="student-icon">★</div>
+                <h3>Mentorship</h3>
+                <p>Meet professionals who guide you through applications, interviews and career decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="student-journey-section">
+        <div class="journey-heading">
+            <span class="eyebrow">How it works</span>
+            <h2>Your journey in 7 simple steps.</h2>
+        </div>
+
+        <div class="student-journey-line">
+            <div class="journey-step">
+                <strong>1</strong>
+                <h3>Create Profile</h3>
+                <p>Add your study background, skills and goals.</p>
+            </div>
+            <div class="journey-step">
+                <strong>2</strong>
+                <h3>AI Assessment</h3>
+                <p>Discover your strengths and development areas.</p>
+            </div>
+            <div class="journey-step">
+                <strong>3</strong>
+                <h3>Roadmap</h3>
+                <p>Receive a personal learning and career plan.</p>
+            </div>
+            <div class="journey-step">
+                <strong>4</strong>
+                <h3>Practice</h3>
+                <p>Work on real tasks and student projects.</p>
+            </div>
+            <div class="journey-step">
+                <strong>5</strong>
+                <h3>Portfolio</h3>
+                <p>Show evidence of what you can do.</p>
+            </div>
+            <div class="journey-step">
+                <strong>6</strong>
+                <h3>Apply</h3>
+                <p>Find opportunities matched to your profile.</p>
+            </div>
+            <div class="journey-step">
+                <strong>7</strong>
+                <h3>Get Hired</h3>
+                <p>Start your career with confidence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="student-opportunities-preview">
+        <div class="opportunities-preview-text">
+            <span class="eyebrow">Recommended for you</span>
+            <h2>Real opportunities, not only theory.</h2>
+            <p>
+                Students can discover internships, projects, competitions and first jobs based on skills,
+                goals, location and AI match score.
+            </p>
+            <a href="{% url 'core:opportunities' %}" class="primary-btn">Explore Opportunities</a>
+        </div>
+
+        <div class="student-job-list">
+            <div class="student-job-card">
+                <span>96% AI Match</span>
+                <h3>Data Analyst Internship</h3>
+                <p>GreenTech Solutions · Berlin · Hybrid</p>
+            </div>
+            <div class="student-job-card">
+                <span>91% AI Match</span>
+                <h3>AI Research Project</h3>
+                <p>University Partner · Remote · 8 weeks</p>
+            </div>
+            <div class="student-job-card">
+                <span>88% AI Match</span>
+                <h3>Junior BI Role</h3>
+                <p>Regional Employer Network · Entry-level</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="student-stories-section">
+        <div class="section-title compact-title">
+            <span>Student Stories</span>
+            <h2>Students who grew with The 13th Chance.</h2>
+        </div>
+
+        <div class="student-story-grid">
+            <div class="student-story-card">
+                <img src="{% static 'core/img/students/emily.png' %}" alt="Emily Johnson">
+                <p>“The AI roadmap helped me understand what to improve and how to build my first portfolio.”</p>
+                <h3>Emily Johnson</h3>
+                <span>Data Science Student</span>
+            </div>
+
+            <div class="student-story-card">
+                <img src="{% static 'core/img/students/david.png' %}" alt="David Müller">
+                <p>“My mentor helped me prepare for interviews and I finally felt confident applying.”</p>
+                <h3>David Müller</h3>
+                <span>Business Informatics Student</span>
+            </div>
+
+            <div class="student-story-card">
+                <img src="{% static 'core/img/students/aisha.png' %}" alt="Aisha Khan">
+                <p>“I discovered UX design and created a portfolio that showed my real skills.”</p>
+                <h3>Aisha Khan</h3>
+                <span>Design Student</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="student-final-cta">
+        <div>
+            <span>Ready to start?</span>
+            <h2>Your future does not have to wait until graduation.</h2>
+        </div>
+        <a href="#" class="white-cta-btn">Join Platform</a>
+    </section>
+
+</main>
+
+{% endblock %}
